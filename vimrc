@@ -82,7 +82,10 @@
 	set nowritebackup
 	set noswapfile
 	set autochdir
-  set clipboard=unnamed
+  " set clipboard=unnamed
+  if $TMUX == ''
+    set clipboard+=unnamed
+  endif
 
   if exists('+undofile')
     if !isdirectory(expand('~/.vim/tmp')) && exists('*mkdir')
