@@ -86,6 +86,9 @@
   if $TMUX == ''
     set clipboard+=unnamed
   endif
+  nnoremap <F2> :set invpaste paste?<CR>
+  imap <F2> <C-O>:set invpaste paste?<CR>
+  set pastetoggle=<F2>
 
   if exists('+undofile')
     if !isdirectory(expand('~/.vim/tmp')) && exists('*mkdir')
