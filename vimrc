@@ -75,6 +75,8 @@
 
   set shell=/bin/zsh
   :imap jj <Esc>
+  " Allow saving of files as sudo when I forgot to start vim using sudo.
+  :cmap w!! w !sudo tee > /dev/null %
   map <C-n> :NERDTreeToggle<CR>
   set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 
