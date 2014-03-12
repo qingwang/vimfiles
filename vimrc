@@ -54,6 +54,11 @@
   NeoBundle 'delimitMate.vim'
   NeoBundle 'CursorLineCurrentWindow'
 
+  if has("macunix")
+    NeoBundle 'rizzatti/funcoo.vim'
+    NeoBundle 'rizzatti/dash.vim'
+  endif
+
   " if v:version >= 703 && has('patch584') && has('python') && (filereadable('/usr/lib/libclang.dylib') || filereadable('/usr/local/lib/libclang.so') || filereadable('/opt/local/lib/libclang.so') || filereadable('/usr/lib64/libclang.so') || filereadable('/usr/lib/libclang.so'))
   "   NeoBundle 'Valloric/YouCompleteMe', { 'build': { 'mac': 'EXTRA_CMAKE_ARGS="-DUSE_SYSTEM_LIBCLANG=ON" ./install.sh --clang-completer', 'unix': 'EXTRA_CMAKE_ARGS="-DUSE_SYSTEM_LIBCLANG" ./install.sh --clang-completer' } }
   " endif
