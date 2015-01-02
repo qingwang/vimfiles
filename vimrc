@@ -8,7 +8,8 @@
   endif
 
   let g:neobundle_default_git_protocol = 'https'
-  call neobundle#rc(expand('~/.vim/bundle/'))
+  " call neobundle#rc(expand('~/.vim/bundle/'))
+  call neobundle#begin(expand('~/.vim/bundle/'))
 
   " Let NeoBundle manage NeoBundle
   NeoBundleFetch 'Shougo/neobundle.vim'
@@ -62,6 +63,7 @@
   " if v:version >= 703 && has('patch584') && has('python') && (filereadable('/usr/lib/libclang.dylib') || filereadable('/usr/local/lib/libclang.so') || filereadable('/opt/local/lib/libclang.so') || filereadable('/usr/lib64/libclang.so') || filereadable('/usr/lib/libclang.so'))
   "   NeoBundle 'Valloric/YouCompleteMe', { 'build': { 'mac': 'EXTRA_CMAKE_ARGS="-DUSE_SYSTEM_LIBCLANG=ON" ./install.sh --clang-completer', 'unix': 'EXTRA_CMAKE_ARGS="-DUSE_SYSTEM_LIBCLANG" ./install.sh --clang-completer' } }
   " endif
+  call neobundle#end()
 
 
   filetype plugin indent on     " Required!
