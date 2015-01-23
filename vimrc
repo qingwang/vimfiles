@@ -47,6 +47,7 @@
   NeoBundle 'tpope/vim-fugitive', { 'augroup': 'fugitive' }
   NeoBundle 'tpope/vim-unimpaired'
   NeoBundle 'vim-ruby/vim-ruby'
+  NeoBundle 'alvan/vim-closetag'
 
 	" vim-scripts repos
   NeoBundle 'rails.vim'
@@ -252,6 +253,7 @@
 " }}}
 
 " auto-complete and syntax checking {{{
+  let g:closetag_filenames = "*.html,*.xhtml,*.phtml,*.html.erb"
   let g:ycm_add_preview_to_completeopt=1
   let g:ycm_confirm_extra_conf=0
   let g:syntastic_check_on_open=1
